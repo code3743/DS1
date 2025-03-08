@@ -9,6 +9,7 @@ services:
       POSTGRES_DB: db
     volumes:
       - ./data/db:/var/lib/postgresql/data
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
   admin:
     image: dpage/pgadmin4
     ports:
