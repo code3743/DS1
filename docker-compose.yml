@@ -1,0 +1,21 @@
+services:
+  db:
+    image: postgres:14-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: db
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+  admin:
+    image: dpage/pgadmin4
+    ports:
+      - "5050:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@ds.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+      CONEXION_STRING: postgres://postgres:postgres@db:5432/db
+    depends_on:
+      - db
