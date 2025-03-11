@@ -2,7 +2,7 @@
 
 ### Integrantes:
 
-- *Pedro Bernal* - *2259*
+- *Pedro Bernal* - *2259548*
 - *Esmeralda Rivas* - *2259*
 - *Jota López* - *2259*
 
