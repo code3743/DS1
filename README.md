@@ -3,8 +3,8 @@
 ### Integrantes:
 
 - *Pedro Bernal* - *2259548*
-- *Esmeralda Rivas* - *2259*
-- *Jota López* - *2259*
+- *Esmeralda Rivas* - *2259580*
+- *Jota López* - *2259394*
 
 ### Descripción del proyecto:
 

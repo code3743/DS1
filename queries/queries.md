@@ -26,7 +26,7 @@ ORDER BY total_sales DESC;
 ```sql
 CREATE INDEX idx_invoices_customer ON Invoices(customer_id);
 
-SELECT customer_id, SUM(i.quantity * i.price) AS total_spent
+SELECT customer_id, SUM(quantity * price) AS total_spent
 FROM Invoices 
 GROUP BY customer_id
 ORDER BY total_spent DESC
